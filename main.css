@@ -1,0 +1,185 @@
+.background{
+    height:700px;
+    width:2020px;
+    background:url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xfp1/t31.0-8/1071323_10151442221841504_218863267_o.jpg) no-repeat;
+    background-size:cover;
+    color:#00ccff;
+    font-size:2em;
+    text-align:left;
+    font-family:Comic Sans MS;
+    
+
+}
+.background a{
+    text-decoration:none;
+    color:#0066ff;
+}
+
+#info{
+    text-align:right;
+}
+
+
+#bubble:hover{
+    background:url(https://scontent-lax3-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12265833_974863549225862_5618061758587402954_o.jpg) no-repeat;
+    background-size:cover;
+    transition:1.5s;
+    
+    
+}
+
+
+#bubble{
+    position:relative;
+    height:350px;
+    width:400px;
+    background-color:#ffff99;
+    border-radius:30px;
+    margin-top:-75px;
+    margin-left:-30px;
+    padding:40px 0px 10px 40px;
+    clear:both;
+
+}
+
+.interests{
+    font-family:Verdana;
+    clear:both;
+    height:300px;
+    width:2000px;
+    text-align:center;
+    font-size:2em;
+    background-color:#3366cc;
+    padding: 30px 0 0px 20px;
+    float:left;
+}    
+.interests h1{
+    margin-top:-10px;
+    margin-left:-50px;
+    background-color:#ffff99;
+    color:#3366cc;
+}
+
+.stuff{
+    float:left;
+    font-size:30px;
+    margin-top:-25px;
+    padding: 0 60px 0 60px;
+    border-radius:10px;
+    color:#ffff99;
+    
+}
+
+.stuff p{
+    font-family:Sans-serif,Fantasy;
+    color:#3366cc;
+    font-weight:Bold;
+}
+
+#DP p:hover{
+    color:#ffff99;
+}
+
+.stuff:hover{
+    color:#3366cc;
+    transition:3s;
+    
+
+}
+
+ #DP:hover{
+    background:url(http://www.devpointlabs.com/assets/DevPoint-labs-logo.png)no-repeat center center;
+    
+    
+
+    
+}
+
+#sports:hover{
+    background:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6LDsXrmY3xDdnC8jh_5Si07ocBxpOTwVDZzl9-oWzxqU_GkEE8w)no-repeat center center;
+    background-size:cover;
+    font-weight:Bold;
+}
+
+#games:hover{
+    background:url(http://i430.photobucket.com/albums/qq26/zodiaco2901/masterchief.gif)no-repeat center center;
+    background-size:cover;
+}
+
+.Work{
+    position:relative;
+    font-family:Sans-serif, Fantasy;
+    clear:both;
+    height:600px;
+    width:2020px;
+    text-align:center;
+    font-weight:900;
+    width:cover;
+    background:url("http://www.personal.psu.edu/users//a/s/asp5130/Edsgn100/project%205/welding/index_files/migwelding.JPG")no-repeat center center;
+    background-size:cover;
+}
+
+.Work h1{
+    font-size:70px;
+    color:#bfbfbf;
+    padding-bottom:70px;
+}
+
+.Work p{
+    padding-top:30px;
+    color:#bfbfbf;
+    font-size:50px;
+    text-align:left;
+    display:inline;
+    
+}
+
+#states{
+    font-weight:900;
+    letter-spacing:85px;
+    font-family:Sans-serif, Fantasy;
+    height:30px;
+    width:2020px;
+    position:relative;
+    clear:both;
+    float:left;
+    text-align:center;
+    color:#ffff99;
+    font-size:30px;
+    background-color:#3366cc;
+}
+
+
+
+.places{
+    float:left;
+    clear:both;
+    height:500px;
+    width:2020px;
+    
+}
+
+.row img{
+    height:500px;
+    width:404px;
+    position:relative;
+    float:left;
+}
+
+#last-touch{
+    font-weight:Bold;
+    color:#ffff99;
+    position:relative;
+    clear:both;
+    width:2020px;
+    height:30px;
+    font-size:30px;
+    font-family:Sans-serif, Fantasy;
+    text-align:center;
+    background-color:#3366cc;
+    letter-spacing:85px;
+}
+
+
+
+
