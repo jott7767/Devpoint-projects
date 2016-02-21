@@ -7,30 +7,32 @@ get_question = lambda { print "Ask a question: "}
 new_answer = -> {$stdin.gets.strip.downcase}
 answer_2 = answer.clone
 add_answer = -> {
-  print "new answer: "
-   newanswer = new_answer.call
-     if answer_2.map(&:downcase).include?(newanswer)
+      puts "how many answers you wanna add?"
+    plus_answers = gets.strip.to_i
+    plus_answers.times do
+      puts "new answer: "
+      newest_answer = gets.strip
+     if answer_2.map(&:downcase).include?(newest_answer.downcase)
        puts "I already know that one"
      else 
-       answer_2 << newanswer
-       puts "#{newanswer} added"
+       answer_2 << newest_answer
        puts ""
      end
+   end
+       puts "your answer bank is now:"
+       puts answer_2
+       puts ""
 }
 
-first, second, third, fourth, fifth = ARGV
-hidden_q = "#{first} #{second} #{third} #{fourth} #{fifth}"
-answer_2 << hidden_q 
-def  backdoor_answer(hidden_q)
-  if ARGV.any?
-    puts "#{hidden_q} has been added"
-  else
-  end
-end
 
-backdoor_answer(hidden_q)
-    puts "Welcome to the Ruby Eight-ball!" 
-    puts "You may type quit to quit"
+back_door = ARGV[0]
+ARGV.clear
+if back_door == "new_answers" 
+        add_answer.call
+end
+   
+  puts "Welcome to the Ruby Eight-ball!" 
+  puts "You may type quit to quit"
 while true
   get_question.call  
   question = new_answer.call
@@ -42,7 +44,7 @@ while true
         when question = "quit"
           puts "bye bye then"
             exit
-        when question = "add_answers"  
+        when question = "add_answers"
               add_answer.call
         when question = "reset_answers" 
            answer_2 = answer.clone
@@ -50,7 +52,6 @@ while true
            puts ""
         when question = "print_answers" 
           puts answer_2.uniq
-          puts ""
         else  
           puts answer_2.sample
           puts ""
