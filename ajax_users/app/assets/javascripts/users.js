@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('#new_user').addClass('hide');
   });
 
-  $('#newest').submit(function(e) {
+  $('#new_user_form').on('submit', function(e) {
     e.preventDefault();
 
     $.ajax({
@@ -51,8 +51,9 @@ $(document).ready(function() {
       type: 'POST',
       data: $(this).serializeArray(),
       success: function(data) {
-
         console.log(data.user);
+        $('#new_user').empty();
+        $('#new_user_form').addClass('hide');
         $('#new_user').removeClass('hide');
         getUsers();
       },
