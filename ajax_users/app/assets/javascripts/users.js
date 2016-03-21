@@ -44,7 +44,6 @@ $(document).ready(function() {
 
   $('#new_user_form').on('submit', function(e) {
     e.preventDefault();
-
     $.ajax({
       url: baseUrl + 'users',
       dataType: 'JSON',
@@ -52,7 +51,6 @@ $(document).ready(function() {
       data: $(this).serializeArray(),
       success: function(data) {
         console.log(data.user);
-        $('#new_user').empty();
         $('#new_user_form').addClass('hide');
         $('#new_user').removeClass('hide');
         getUsers();
